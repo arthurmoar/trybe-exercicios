@@ -14,3 +14,7 @@ console.log(info);
 for (key in info) {
   console.log(key);
 }
+
+for (key in info) {
+  console.log(info[key]);
+}
