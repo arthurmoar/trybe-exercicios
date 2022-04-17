@@ -1,0 +1,9 @@
+document.getElementById('header-container').style.backgroundColor = "green";
+document.getElementsByClassName('urgent-tasks')[0].style.backgroundColor = "#880044";
+document.getElementsByClassName('urgent-tasks')[1].style.backgroundColor = "#880044";
+document.getElementsByClassName('important-tasks')[0].style.backgroundColor = "#009900";
+document.getElementsByClassName('important-tasks')[1].style.backgroundColor = "#009900";
+document.getElementsByTagName('h3')[0].style.backgroundColor = "#666666";
+document.getElementsByTagName('h3')[1].style.backgroundColor = "#666666";
+document.getElementsByTagName('h3')[2].style.backgroundColor = "#666666";
+document.getElementsByTagName('h3')[3].style.backgroundColor = "#666666"
