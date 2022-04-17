@@ -1,9 +1,5 @@
-document.getElementById('header-container').style.backgroundColor = "green";
-document.getElementsByClassName('urgent-tasks')[0].style.backgroundColor = "#880044";
-document.getElementsByClassName('urgent-tasks')[1].style.backgroundColor = "#880044";
-document.getElementsByClassName('important-tasks')[0].style.backgroundColor = "#009900";
-document.getElementsByClassName('important-tasks')[1].style.backgroundColor = "#009900";
-document.getElementsByTagName('h3')[0].style.backgroundColor = "#666666";
-document.getElementsByTagName('h3')[1].style.backgroundColor = "#666666";
-document.getElementsByTagName('h3')[2].style.backgroundColor = "#666666";
-document.getElementsByTagName('h3')[3].style.backgroundColor = "#666666"
+document.getElementsByClassName('paragraph-one')[0].innerHTML = "Em 2 anos estarei trabalhando como desenvolvedor, aprimorando minhas tecnicas e habilidades."; //Crie uma função que mude o texto na tag <p> para uma descrição de como você se vê daqui a 2 anos.
+document.getElementsByClassName('main-content')[0].style.backgroundColor = "rgb(76,164,109)"; // Crie uma função que mude a cor do quadrado amarelo para o verde da Trybe (rgb(76,164,109)).
+document.getElementsByClassName('center-content')[0].style.backgroundColor = "rgb(255,255,255)"; // Crie uma função que mude a cor do quadrado vermelho para branco.
+document.getElementsByClassName('title')[0].innerHTML = "Exercício 5.1 - JavaScript " //Crie uma função que corrija o texto da tag <h1>.
+document.getElementsByTagName('p'); //Crie uma função que exiba o conteúdo de todas as tags <p> no console.
