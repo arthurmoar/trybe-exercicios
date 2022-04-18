@@ -93,3 +93,14 @@ thirdH3.classList.add('description');
 //Exercicio 11: Removendo left-contet
 let removendo = document.getElementsByClassName('main-content')[0];
 removendo.removeChild(removendo.firstChild.nextSibling)
+
+//Exercicio 12: Alinhando a section rigth.
+document.getElementsByClassName('right-content')[0].style.margin = 'auto';
+
+//Exercicio 13: Mudando a cor de fundo.
+document.querySelector('.center-content').style.backgroundColor = 'green';
+
+//Exerccio 14: Removendo os dois ultimos elementos da lista ordenada.
+let listRemove = document.querySelector('ol');
+listRemove.removeChild(listRemove.children[9]);
+listRemove.removeChild(listRemove.children[8]);
