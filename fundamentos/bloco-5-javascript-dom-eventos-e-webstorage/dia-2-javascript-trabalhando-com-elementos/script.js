@@ -3,6 +3,8 @@ let catBody = document.body;
 let innerBody = document.createElement('h1');
 catBody.appendChild(innerBody);
 document.getElementsByTagName('h1')[0].innerHTML = "Exercício 5.2 - JavaScript DOM "
+// Exercicio 10: Criando uma classe para o h1.
+innerBody.classList.add('title');
 
 //Exercicio 2: Criando a tag main e adicionando uma classe.
 let innerMain = document.createElement('main');
@@ -74,13 +76,20 @@ let h3 = document.querySelector('.center-content');
 let firstH3 = document.createElement('h3');
 h3.appendChild(firstH3);
 document.getElementsByTagName('h3')[0].innerHTML = "Titulo aleatórios."
+firstH3.classList.add('description');
 
 let titleImage = document.querySelector('.left-content');
 let secondH3 = document.createElement('h3');
 titleImage.appendChild(secondH3);
 document.getElementsByTagName('h3')[1].innerHTML = "Titulo para a imagem."
+secondH3.classList.add('description');
 
 let titleList = document.querySelector('.right-content');
 let thirdH3 = document.createElement('h3');
 titleList.appendChild(thirdH3);
 document.getElementsByTagName('h3')[2].innerHTML = "Titulo para a lista."
+thirdH3.classList.add('description');
+
+//Exercicio 11: Removendo left-contet
+let removendo = document.getElementsByClassName('main-content')[0];
+removendo.removeChild(removendo.firstChild.nextSibling)
