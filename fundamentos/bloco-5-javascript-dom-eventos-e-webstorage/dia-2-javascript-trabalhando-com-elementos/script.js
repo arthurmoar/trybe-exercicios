@@ -68,3 +68,19 @@ for (let i = 0; i < listOrdered.length; i += 1) {
 
   listLineOrdered.appendChild(listLine);
 }
+
+//Exercicio 9: Criando 3 tags h3 filhas da tag main.
+let h3 = document.querySelector('.center-content');
+let firstH3 = document.createElement('h3');
+h3.appendChild(firstH3);
+document.getElementsByTagName('h3')[0].innerHTML = "Titulo aleatórios."
+
+let titleImage = document.querySelector('.left-content');
+let secondH3 = document.createElement('h3');
+titleImage.appendChild(secondH3);
+document.getElementsByTagName('h3')[1].innerHTML = "Titulo para a imagem."
+
+let titleList = document.querySelector('.right-content');
+let thirdH3 = document.createElement('h3');
+titleList.appendChild(thirdH3);
+document.getElementsByTagName('h3')[2].innerHTML = "Titulo para a lista."
