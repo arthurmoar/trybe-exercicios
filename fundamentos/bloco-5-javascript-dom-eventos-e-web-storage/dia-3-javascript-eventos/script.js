@@ -33,7 +33,7 @@ for (let i = 0; i < dezDaysList.length; i += 1) {
     listLine.classList.add('friday')
   }
 }
-function hollidays(feriados) {
+function hollidays(Feriados) {
 
 }
 let buttons = document.querySelector('.buttons-container');
@@ -43,10 +43,24 @@ buttonHoliday.setAttribute('id', 'btn-holiday');
 document.querySelector('#btn-holiday').innerHTML = "Feriados";
 
 const catHolidays = document.querySelector('#btn-holiday');
-const classHoliday = document.querySelector('.holiday');
-catHolidays.addEventListener("click", clickHolidays)
+const classHoliday = document.getElementsByClassName('holiday');
+catHolidays.addEventListener("click", clickHolidays);
 
-function clickHolidays(){
-  classHoliday.style.backgroundColor = "green"
-  classHoliday.style.color = "white"
+function clickHolidays() {
+  for (let buttonHColor of classHoliday) {
+    if (buttonHColor.style.backgroundColor != 'rgb(42, 163, 42)') {
+      buttonHColor.style.backgroundColor = 'rgb(42, 163, 42)';
+      buttonHColor.style.color = 'rgb(238, 238, 238)'
+    } else {
+      buttonHColor.style.backgroundColor = 'rgb(238,238,238)';
+      buttonHColor.style.color = 'rgb(102, 102, 102)'
+    }
+  }
 }
+function friday(SextaFeira) {
+
+}
+let buttonFriday = document.createElement('button');
+buttons.appendChild(buttonFriday);
+buttonFriday.setAttribute('id', 'btn-friday');
+document.querySelector('#btn-friday').innerHTML = "Sexta-Feira";
