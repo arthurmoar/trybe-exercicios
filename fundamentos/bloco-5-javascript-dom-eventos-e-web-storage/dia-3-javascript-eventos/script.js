@@ -64,3 +64,20 @@ let buttonFriday = document.createElement('button');
 buttons.appendChild(buttonFriday);
 buttonFriday.setAttribute('id', 'btn-friday');
 document.querySelector('#btn-friday').innerHTML = "Sexta-Feira";
+
+const catFridays = document.querySelector('#btn-friday');
+const classFriday = document.querySelectorAll('.friday');
+catFridays.addEventListener("click", clickFriday);
+
+function clickFriday() {
+  for (let i = 0; i < classFriday.length; i += 1) {
+    if (classFriday[i].innerHTML != "Sextou") {
+      classFriday[i].innerHTML = 'Sextou'
+    } else {
+      classFriday[i] = classFriday[i];
+    }
+  }
+}
+
+
+
