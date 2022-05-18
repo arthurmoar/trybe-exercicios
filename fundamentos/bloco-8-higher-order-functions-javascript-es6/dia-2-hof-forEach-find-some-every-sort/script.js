@@ -63,17 +63,73 @@ const books = [
 
 
 // Adicione o código do exercício aqui:
-function authorBornIn1947(year) {
 
+// 🚀 1 - Encontre o nome da primeira pessoa autora do livro nascida no ano de 1947.
+// Dica: use a função find.
+
+function authorBornIn1947(year) {
   return books.find((book) => book.author.birthYear == year).author.name
 }
 
-console.log(authorBornIn1947(1947));
+//console.log(authorBornIn1947(1947));
+
+// 2 - Retorne o nome do livro de menor nome.
+// Dica: use a função forEach.
 
 function smallerName() {
   let nameBook;
   // escreva aqui o seu código
-
+  books.forEach((book) => {
+    if (!nameBook || book.name.length < nameBook.length) {
+      nameBook = book.name;
+    }
+  });
   // Variável nameBook que receberá o valor do menor nome;
   return nameBook;
 }
+
+// console.log(smallerName());
+
+// 3 - Encontre o primeiro livro cujo nome possui 26 caracteres.
+function getNamedBook() {
+  // escreva seu código aqui
+  return books.find((book) => book.name.length === 26);
+}
+// console.log(getNamedBook());
+
+// 4 - Ordene os livros por data de lançamento em ordem decrescente.
+
+function booksOrderedByReleaseYearDesc() {
+  // escreva aqui seu código
+  return books.sort((bookA, bookB) => bookB.releaseYear - bookA.releaseYear);
+}
+
+// console.log(booksOrderedByReleaseYearDesc());
+
+// 5 - Faça uma função que retorne true, se todas as pessoas autoras nasceram no século XX, ou false, caso contrário.
+
+function everyoneWasBornOnSecXX() {
+  // escreva seu código aqui
+  return books.every((book) => book.author.birthYear > 1900 && book.author.birthYear <= 2000);
+}
+
+// console.log(everyoneWasBornOnSecXX());
+
+//6 - Faça uma função que retorne true, se algum livro foi lançado na década de 80, e false, caso contrário.
+
+function someBookWasReleaseOnThe80s() {
+  // escreva seu código aqui
+  return books.some((book) => book.releaseYear > 1980 && book.releaseYear <= 1989);
+}
+// console.log(someBookWasReleaseOnThe80s());
+
+//7 - Faça uma função que retorne true, caso nenhum author tenha nascido no mesmo ano, e false, caso contrário.
+
+function authorUnique() {
+  // escreva seu código aqui
+  return books.every((book) =>
+    !books.some((bookSome) =>
+      (bookSome.author.birthYear === book.author.birthYear) && (bookSome.author.name !== book.author.name)));
+}
+
+console.log(authorUnique());
