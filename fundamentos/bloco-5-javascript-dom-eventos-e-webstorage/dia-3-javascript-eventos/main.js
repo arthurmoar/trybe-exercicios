@@ -11,21 +11,45 @@ const myWebpage = document.getElementById('my-spotrybefy');
 
 // 2. Crie uma função que adicione a classe 'tech' ao elemento `li` quando for clicado.
 // 2.1. Deve existir apenas um elemento com a classe 'tech'. Como você faz isso?
-let linha = document.querySelector('li');
-linha.addEventListener('click', function(){
-  linha.classList.add('tech');
-})
+
+const addClassTech = (event) => {
+  const techElement = document.querySelector('.tech');
+  techElement.classList.remove('tech');
+  event.target.classList.add('tech');
+  input.value = '';
+};
+
+firstLi.addEventListener('click', addClassTech);
+secondLi.addEventListener('click', addClassTech);
+thirdLi.addEventListener('click', addClassTech);
 
 // 3. Crie uma função que, ao digitar na caixa de texto, altere o texto do elemento
 // com a classe 'tech';
+
+input.addEventListener('input', (e) => {
+  const techElement = document.querySelector('.tech');
+  techElement.innerHTML = e.target.value;
+});
 
 // 4. Crie uma função que, ao clicar duas vezes em 'Meu top 3 do Spotrybefy', ele
 // redirecione para alguma página;
 // 4.1. Que tal redirecionar para seu portfólio?
 
+myWebpage.addEventListener('dblclick', () => {
+  window.location.replace('https://www.google.com');
+});
+
 // 5. Crie uma função que, ao passar o mouse sobre 'Meu top 3 do Spotrybefy', altere
 // a cor do mesmo;
 
+myWebpage.addEventListener('mouseover', () => {
+  myWebpage.style.backgroundColor = "#2fc18c";
+  myWebpage.style.color = "#000";
+});
+myWebpage.addEventListener('mouseout', () => {
+  myWebpage.style.backgroundColor = "#333";
+  myWebpage.style.color = "white";
+});
 // Segue abaixo um exemplo do uso de event.target:
 
 
