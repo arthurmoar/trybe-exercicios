@@ -83,8 +83,8 @@ O programa tem mais de 1.500 horas de aulas presenciais e online, e apresenta a 
 
 - [x] 10-1: _Primeiros passos na brincadeira_
 - [x] 10-2: _Jest - Testes Assíncronos_
-- [] 10-3: _Jest - Simulando Comportamentos_
-- [] 10-4: _ [Projeto - Assassin Jest and Mocking] () _
+- [x] 10-3: _Jest - Simulando Comportamentos_
+- [x] 10-4: _ [Projeto - Assassin Jest and Mocking] () _
 
 ##### Bloco 11: Introdução - React :hourglass_flowing_sand:
 
